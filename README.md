@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Voterly
+This repository contains the smart contract (and some frontend) code for Voterly, a decentralized governance platform with multiparty delegation built with Cairo.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Setting up the Frontend
+Clone the repository to your local machine:
+```git clone https://github.com/starknet-voterly/demo-repository.git```
+Change into the frontend directory:
+```cd frontend````
+Install the dependencies using yarn:
+```yarn install```
+Start the development server using yarn:
+```yarn dev```
+This will start the development server and you can access the frontend at http://localhost:3000.
 
-## Available Scripts
+## Viewing the WARP Output
+To view the WARP output of the smart contracts, you can go to the smart contracts folder and run the following commands:
+```npx buidler run scripts/warp.js --network=<network>```
+Replace <network> with the network you want to view the WARP output for (e.g. rinkeby).
 
-In the project directory, you can run:
+The WARP output will be saved in the cairo and json format in the smart contracts folder.
 
-### `npm start`
+Summary
+Voterly lays the groundwork for multi-delegation in its purest and simplest form. In the future, we’ll look to introduce:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- An efficient way to have multiple votes running at one moment in time
+- The ability to add quorums needed for a vote to pass
+- Different voting logic for each custom situation
+- Possible ways to allow for undelegation of power during a vote
+- Upgraded Smart Contracts that allows for full interfaces
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More 
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To learn more about our project and our inspiration to develop this, please see our notion: https://www.notion.so/VOTERLY-42c6b53eec7946adb2064ffc3606d84b.
