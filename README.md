@@ -3,18 +3,28 @@ This repository contains the smart contract (and some frontend) code for Voterly
 
 ## Setting up the Frontend
 Clone the repository to your local machine:
+
 ```git clone https://github.com/starknet-voterly/demo-repository.git```
+
 Change into the frontend directory:
-```cd frontend````
+
+```cd frontend```
+
 Install the dependencies using yarn:
+
 ```yarn install```
+
 Start the development server using yarn:
+
 ```yarn dev```
+
 This will start the development server and you can access the frontend at http://localhost:3000.
 
 ## Viewing the WARP Output
 To view the WARP output of the smart contracts, you can go to the smart contracts folder and run the following commands:
+
 ```npx buidler run scripts/warp.js --network=<network>```
+
 Replace <network> with the network you want to view the WARP output for (e.g. rinkeby).
 
 The WARP output will be saved in the cairo and json format in the smart contracts folder.
