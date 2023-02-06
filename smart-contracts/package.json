@@ -1,6 +1,7 @@
 {
   "name": "hardhat-project",
   "dependencies": {
+    "@nethermindeth/hardhat-warp": "^1.1.10",
     "@openzeppelin/contracts": "^4.8.1",
     "harhat": "^1.0.1"
   },
